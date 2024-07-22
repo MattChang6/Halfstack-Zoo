@@ -9,6 +9,7 @@ import { Donations } from './pages/Donations';
 import { Membership } from './pages/Membership';
 import { Shop } from './pages/Shop';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
