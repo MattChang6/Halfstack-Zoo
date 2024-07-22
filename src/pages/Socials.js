@@ -13,7 +13,7 @@ export function Socials() {
             <a href="#/Socials" class="fa fa-twitter"></a>
             <a href="#/Socials" class="fa fa-linkedin"></a>
             <a href="#/Socials" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-instagram"></a>
+            <a href="#/Socials" class="fa fa-instagram"></a>
         </>
     )
 }

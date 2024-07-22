@@ -8,6 +8,7 @@ import { Socials } from './pages/Socials';
 import { Donations } from './pages/Donations';
 import { Membership } from './pages/Membership';
 import { Shop } from './pages/Shop';
+import { Events } from './pages/Events';
 import './App.css';
 
 
@@ -20,6 +21,7 @@ function App() {
 			<nav className="nav justify-content-end">
 				<Link to="/">Home</Link>&emsp;
 				<Link to="/Tickets">Tickets</Link>&emsp;
+				<Link to="/Events">Events</Link>&emsp;
 				<Link to="/Donations">Donations</Link>&emsp;
 				<Link to="/Membership">Membership</Link>&emsp;
 				<Link to="/Mission">Mission</Link>&emsp;
@@ -34,6 +36,7 @@ function App() {
 			<Route path="/Kids" element={<Kids />}/>
 			<Route path="/Mission" element={<Mission />}/>
 			<Route path="/Tickets" element={<Tickets />}/>
+			<Route path="/Events" element={<Events />}/>
 			<Route path="/Socials" element={<Socials />}/>
 			<Route path="/Donations" element={<Donations />}/>
 			<Route path="/Membership" element={<Membership />}/>
