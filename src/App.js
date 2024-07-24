@@ -9,6 +9,9 @@ import { Donations } from './pages/Donations';
 import { Membership } from './pages/Membership';
 import { Shop } from './pages/Shop';
 import { Events } from './pages/Events';
+import { Bat } from './pages/Kids-Bat'
+import { Cheetah } from './pages/Kids-Cheetah'
+import { Chameleon } from './pages/Kids-Chameleon'
 import './App.css';
 
 
@@ -41,6 +44,9 @@ function App() {
 			<Route path="/Donations" element={<Donations />}/>
 			<Route path="/Membership" element={<Membership />}/>
 			<Route path="/Shop" element={<Shop />}/>
+			<Route path="/Kids-Bat" element={<Bat />}/>
+			<Route path="/Kids-Cheetah" element={<Cheetah />}/>
+			<Route path="/Kids-Chameleon" element={<Chameleon />}/>
 		</Routes>
 		</>
 	)
