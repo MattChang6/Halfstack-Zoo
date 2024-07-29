@@ -12,25 +12,27 @@ export function Kids() {
             <h1>Kids Page</h1>
             <h2>Discover This Month's Featured Animals!</h2>
             <div className='container mt-3' style={{display: 'flex', gap: '20px', width: '100%'}}>
-                <div className='card' style={{width: '30%'}}>
+                <div className='card'>
                     <img className='card-img-top' src={require('./images/bat.jpg')} alt='bat' />
                     <div className='card-body'>
-                        <h4 className='card-title'>type of bat</h4>
-                        <p className='card-text'><Link to="/Kids-Bat">Bat</Link>&emsp;</p>
+                        <h4 className='card-title'>Bats</h4>
+                        <p className='card-text'><Link to="/Kids-Bat">Learn More</Link>&emsp;</p>
                     </div>
                 </div>
-                <div className='card' style={{width: '30%'}}>
-                    <img className='card-img-top' src={require('./images/bat.jpg')} alt='cheetah' />
+                <div className='card'>
+                    <a href='#/Kids-Cheetah'>
+                    <img className='card-img-top' src={require('./images/cheetah.jpg')} alt='cheetah' />
+                    </a>
                     <div className='card-body'>
-                        <h4 className='card-title'>type of cheetah</h4>
-                        <p className='card-text'><Link to="/Kids-Cheetah">Cheetah</Link>&emsp;</p>
+                        <h4 className='card-title'>Cheetahs</h4>
+                        <p className='card-text'><Link to="#/Kids-Cheetah">Learn More</Link>&emsp;</p>
                     </div>
                 </div>
-                <div className='card' style={{width: '30%'}}>
-                    <img className='card-img-top' src={require('./images/bat.jpg')} alt='cheetah' />
+                <div className='card'>
+                    <img className='card-img-top' src={require('./images/chameleon.jpg')} alt='chameleon' />
                     <div className='card-body'>
-                        <h4 className='card-title'>type of chameleon</h4>
-                        <p className='card-text'><Link to="/Kids-Chameleon">Chameleon</Link>&emsp;</p>
+                        <h4 className='card-title'>Chameleons</h4>
+                        <p className='card-text'><Link to="/Kids-Chameleon">Learn More</Link>&emsp;</p>
                     </div>
                 </div>
             </div>
