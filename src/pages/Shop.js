@@ -29,9 +29,7 @@ export function Shop() {
             <button>Add to Cart</button>
           </div>
       </main>
-      <footer>
-        <p>&copy; 2024 Sample Shop</p>
-      </footer>
+     
     </div>
   );
 }
