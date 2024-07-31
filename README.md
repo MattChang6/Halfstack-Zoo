@@ -8,5 +8,6 @@ Task List: https://docs.google.com/document/d/1uCnvnEDT7sxykeC0aNx0FQJGZjmpOdFGa
 Description: We are creating a fake zoo website that has interactive elements for children (educational and changing HTML/CSS elements using JS), reservation forms, event calendars, ticket info, etc.
 Trying to learn React Bootstrap: https://react-bootstrap.netlify.app/docs/getting-started/introduction
 Installed:
-https://www.geeksforgeeks.org/how-to-create-a-simple-responsive-footer-in-react-js/
-https://www.geeksforgeeks.org/how-to-redirect-to-another-page-in-reactjs/
+calendar: https://www.npmjs.com/package/@fullcalendar/daygrid
+footer: https://www.geeksforgeeks.org/how-to-create-a-simple-responsive-footer-in-react-js/
+Link: https://www.geeksforgeeks.org/how-to-redirect-to-another-page-in-reactjs/
