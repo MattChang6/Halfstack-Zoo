@@ -1,0 +1,16 @@
+#game-box {
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    border: 1px solid black;
+    background-image: url('../pages/images/jungle.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#chameleon-image {
+    position: absolute;
+    cursor: pointer;
+    height: 50px;
+    background-color: transparent;
+}
