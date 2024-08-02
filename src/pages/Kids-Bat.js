@@ -37,7 +37,7 @@ export function Bat(){
                     <br />
                     <h2>Bats</h2>
                     <p>Bats</p>
-                    <p>Implement light/dark mode and change HTML elements when the switch is clicked</p>
+                    <p>change HTML elements when the switch is clicked</p>
                     <button 
                         onClick={toggleDarkMode} 
                         style={{ 
