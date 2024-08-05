@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 export function Tickets() {
   const [ticketQuantities, setTicketQuantities] = useState({
-    Adult: 0,
+    Adult: 0,   //Initialize Ticket Quantity
     Child: 0,
     Senior: 0
   });
@@ -16,6 +17,8 @@ export function Tickets() {
     Child: 10, // Price for a Child ticket
     Senior: 15 // Price for a Senior ticket
   };
+
+  const navigate = useNavigate();
 
   const handleQuantityChange = (e) => {
     const { name, value } = e.target;
@@ -34,7 +37,6 @@ export function Tickets() {
     setSubmitted(true);
   };
 
-//Take ticket quantity, multiply by selected tickets of each tier, total makes cost for all tickets
   const calculateTotalAmount = () => {
     const total = ticketQuantities.Adult * ticketPrices.Adult +
                   ticketQuantities.Child * ticketPrices.Child +
@@ -42,7 +44,17 @@ export function Tickets() {
     return total;
   };
 
-//Set today and 1 month ahead for calendar
+  const handleBuyTickets = () => {
+    const totalAmount = calculateTotalAmount();
+    const queryParams = new URLSearchParams({
+      ...ticketQuantities,
+      total: totalAmount,
+      date: selectedDate ? selectedDate.toISOString() : ''
+    }).toString();
+
+    navigate(`/cart?${queryParams}`);
+  };
+
   const today = new Date();
   const nextMonth = new Date();
   nextMonth.setMonth(today.getMonth() + 1);
@@ -125,7 +137,7 @@ export function Tickets() {
           <p>Total tickets: {ticketQuantities.Adult + ticketQuantities.Child + ticketQuantities.Senior}</p>
           <p>Visit Day: {selectedDate ? selectedDate.toLocaleDateString() : "Not selected"}</p>
           <p>Total amount to pay: ${calculateTotalAmount()}</p>
-          <button type="submit">Buy Tickets</button>
+          <button type="button" onClick={handleBuyTickets}>Buy Tickets</button>
         </div>
       )}
     </>
