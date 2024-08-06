@@ -20,8 +20,8 @@ function App() {
 	return (
 		<>
 			<div>
-				<Link to="/"><h3>M&N Zoo</h3></Link>
-				<nav className="nav justify-content-end">
+				<Link to="/"><img className="logo" src={require("./pages/images/logo.png")}></img></Link>
+				<nav className="header">
 					<Link to="/">Home</Link>&emsp;
 					<Link to="/Tickets">Tickets</Link>&emsp;
 					<Link to="/Events">Events</Link>&emsp;
