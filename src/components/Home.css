@@ -1,4 +1,23 @@
 .image-gallery-image {
     cursor: default !important;
   }
-  
+
+.planVisit {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.wildFun {
+    position: absolute; 
+    top: 20%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: yellow;
+}
+
+.links {
+    margin: 0 10;
+}
