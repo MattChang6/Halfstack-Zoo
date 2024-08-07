@@ -40,7 +40,6 @@
 
 .Nav {
   background-color: aliceblue;
-  text-align: right;
   font-size: larger;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 25px;
@@ -57,15 +56,19 @@
   background: #282c34;
 }
 
-.logo {
-  width: 300px;
-  padding-top: 20px;
-  padding-left: 20px;
+.logoNav {
+  width: 350px;
+  padding: 15px;
+  /*border-style: solid;*/
 }
 
 .header {
-  text-align: end;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
-  padding-right: 1%;
+  padding: 1%;
+  padding-left: 10%;
+  position: relative;
+  text-align: right;
+  text-align-last: right;
+  text-justify: inter-word;
 }
