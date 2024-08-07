@@ -2,18 +2,19 @@ import React from "react";
 import "./FooterStyles.css";
 import { Link } from "react-router-dom";
 
+//  <Link to="/"><img className="logo" src={require("../pages/images/logo.png")}></img></Link>
+
 const Footer = () => {
     return (
         <div className="box">
             <div className="footer-container">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                 <div className="row">
-                <div className="column">
-                        <p className="heading">Logo + socials</p>
-                        <a href="#/">M&N Zoo</a>
+                    <div className="column">
+                        <Link to="/"><img className="logoFooter" src={require("../pages/images/logo.png")}></img></Link>
+                        <p className="heading">Socials</p>
                         <a href="#/Socials" className="fa fa-facebook"></a>
                         <a href="#/Socials" className="fa fa-twitter"></a>
-                        <a href="#/Socials" className="fa fa-linkedin"></a>
                         <a href="#/Socials" className="fa fa-youtube"></a>
                         <a href="#/Socials" className="fa fa-instagram"></a>
                     </div>

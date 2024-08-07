@@ -45,3 +45,10 @@
     color: rgb(139, 34, 34);
     transition: 150ms ease;
 }
+
+.logoFooter {
+    width: 250px;
+    margin-top: 10px;
+    margin-left: -20px;
+    padding-bottom: 10px;
+}

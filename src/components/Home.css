@@ -1,23 +1,38 @@
 .image-gallery-image {
     cursor: default !important;
+    max-height: 650px;
   }
+
+.image-gallery-slide {
+    width: 100%;
+    left: 0;
+    top: 0;
+    max-height: 650px;
+}
 
 .planVisit {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 5px black;
     color: white;
+    font-size: 80px;
 }
 
 .wildFun {
     position: absolute; 
-    top: 20%;
+    top: 30%;
     left: 50%; 
     transform: translate(-50%, -50%); 
+    text-shadow: 2px 2px 5px black;
     color: yellow;
 }
 
 .links {
     margin: 0 10;
+}
+
+.explore {
+    color: rgb(46, 126, 231);
 }
