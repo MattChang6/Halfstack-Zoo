@@ -19,19 +19,21 @@ import './App.css';
 function App() {
 	return (
 		<>
-			<div>
-				<Link to="/"><img className="logo" src={require("./pages/images/logo.png")} alt="Logo"></img></Link>
-				<nav className="header">
-					<Link to="/">Home</Link>&emsp;
-					<Link to="/Tickets">Tickets</Link>&emsp;
-					<Link to="/Events">Events</Link>&emsp;
-					<Link to="/Donations">Donations</Link>&emsp;
-					<Link to="/Membership">Membership</Link>&emsp;
-					<Link to="/Mission">Mission</Link>&emsp;
-					<Link to="/Kids">Kids</Link>&emsp;
-					<Link to="/Socials">Socials</Link>&emsp;
-					<Link to="/Shop">Shop</Link>&emsp;
-					<Link to="/Cart">Cart</Link>
+			<div style={{ display:'inline' }}>
+				<nav>
+					<Link to="/"><img className="logoNav" src={require("./pages/images/logo.png")} alt="Logo"></img></Link>
+					<span className="header">
+						<Link to="/">Home</Link>&emsp;
+						<Link to="/Tickets">Tickets</Link>&emsp;
+						<Link to="/Events">Events</Link>&emsp;
+						<Link to="/Donations">Donations</Link>&emsp;
+						<Link to="/Membership">Membership</Link>&emsp;
+						<Link to="/Mission">Mission</Link>&emsp;
+						<Link to="/Kids">Kids</Link>&emsp;
+						<Link to="/Socials">Socials</Link>&emsp;
+						<Link to="/Shop">Shop</Link>&emsp;
+						<Link to="/Cart">Cart</Link>
+					</span>
 				</nav>
 			</div>
 
