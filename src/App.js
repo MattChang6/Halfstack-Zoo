@@ -20,7 +20,7 @@ function App() {
 	return (
 		<>
 			<div>
-				<Link to="/"><img className="logo" src={require("./pages/images/logo.png")}></img></Link>
+				<Link to="/"><img className="logo" src={require("./pages/images/logo.png")} alt="Logo"></img></Link>
 				<nav className="header">
 					<Link to="/">Home</Link>&emsp;
 					<Link to="/Tickets">Tickets</Link>&emsp;
