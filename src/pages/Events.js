@@ -8,9 +8,9 @@ export function Events() {
     const calendarEl = document.getElementById('calendar');
 
     const calendar = new Calendar(calendarEl, {
-      timeZone: 'PST',
-      initialView: 'dayGridMonth',
-      events: [{ title: 'Jungle Lights', start: new Date(2024,7,2,13) },
+		timeZone: 'PST',
+		initialView: 'dayGridMonth',
+		events: [{ title: 'Jungle Lights', start: new Date(2024,7,2,13) },
 		{ title: 'Float Parade', start: new Date(2024,7,3,11) },
 		{ title: 'Panda Exhibit Opens (Reservations Only)', start: new Date(2024,7,4,3) },
 		{ title: 'Sneakers for Snakes', start: new Date(2024,7,7,5) },
@@ -32,6 +32,7 @@ export function Events() {
       editable: false,
       selectable: true,
       plugins: [dayGridPlugin],
+	  
     });
 
     calendar.render();

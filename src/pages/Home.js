@@ -93,7 +93,7 @@ export function Home() {
                   <h4 className='card-title'><Link to="/Mission">Our Mission</Link></h4>
               </div>
           </div>
-        </div>
+        </div><br/>
       </div>
     </div>
   );

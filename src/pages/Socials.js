@@ -11,7 +11,6 @@ export function Socials() {
         <h2>Follow Us!</h2>
             <a href="#/Socials" className="fa fa-facebook"></a>
             <a href="#/Socials" className="fa fa-twitter"></a>
-            <a href="#/Socials" className="fa fa-linkedin"></a>
             <a href="#/Socials" className="fa fa-youtube"></a>
             <a href="#/Socials" className="fa fa-instagram"></a>
         </>
