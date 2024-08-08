@@ -1,0 +1,20 @@
+.ourMission{
+    text-align: center;
+    font-family: 'Candal';
+    font-size: 70px;
+}
+
+.title {
+    font-family: 'Candal';
+    padding-left: 1%;
+}
+
+.paragraph {
+    padding-left: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.background{
+    background-image: url('../pages/images/gradient.jpg');;
+}
