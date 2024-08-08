@@ -19,8 +19,8 @@ import './App.css';
 function App() {
 	return (
 		<>
-			<div style={{ display:'inline' }}>
-				<nav>
+			<div style={{ display:'inline'}}>
+				<nav className="Nav">
 					<Link to="/"><img className="logoNav" src={require("./pages/images/logo.png")} alt="Logo"></img></Link>
 					<span className="header">
 						<Link to="/">Home</Link>&emsp;
@@ -52,9 +52,6 @@ function App() {
 				<Route path="/Kids-Cheetah" element={<Cheetah />} />
 				<Route path="/Kids-Chameleon" element={<Chameleon />} />
 			</Routes>
-
-			<br />
-			<br />
 			<Footer />
 		</>
 	);
