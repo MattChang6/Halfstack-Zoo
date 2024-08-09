@@ -1,0 +1,35 @@
+.kidsPageBat {
+    text-align: left;
+    font-family: 'Barriecito';
+    font-size: 60px;
+}
+
+.links {
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: outset;
+    padding: 5px;
+}
+
+.batsTitle {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Chicle';
+}
+
+.paragraph {
+    padding-left: 1%;
+}
+
+.buttonContainer {
+    height: 150px;
+    position: relative;
+}
+
+.nightButton {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

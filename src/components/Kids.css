@@ -1,0 +1,23 @@
+.kidsPage {
+    text-align: center;
+    font-family: 'Barriecito';
+    font-size: 80px;
+}
+
+.discover {
+    text-align: center;
+    font-family: 'Barriecito';
+    font-size: 50px;
+}
+
+.cardContainer{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.animalImage {
+    max-width: 100%;
+    height: auto;
+}

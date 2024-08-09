@@ -10,8 +10,6 @@
   #calendar {
     max-width: flex;
     max-height: flex;
-    margin: 20px auto;
-    border-color: 1px solid black;
   }
 
   /* FullCalendar event title text wrapping */
@@ -26,10 +24,8 @@
   font-size: 1em; /* Adjust font size as needed */
 }
 
-.fc-daygrid-day {
-  border-color: #000000;
-  border-width: 1px;
-  border-style: solid;
+:root {
+  --fc-border-color: black;
 }
 
 .fc-daygrid-event-dot{

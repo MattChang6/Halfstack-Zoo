@@ -2,7 +2,6 @@ import React from "react";
 import "./FooterStyles.css";
 import { Link } from "react-router-dom";
 
-//  <Link to="/"><img className="logo" src={require("../pages/images/logo.png")}></img></Link>
 
 const Footer = () => {
     return (
