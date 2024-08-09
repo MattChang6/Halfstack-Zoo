@@ -2,6 +2,7 @@ import { Bat } from './Kids-Bat'
 import { Cheetah } from './Kids-Cheetah'
 import { Chameleon } from './Kids-Chameleon'
 import { Link, Route, Routes } from "react-router-dom";
+import '../components/Kids.css';
 
 
 // https://www.w3schools.com/bootstrap5/bootstrap_cards.php
@@ -9,16 +10,17 @@ import { Link, Route, Routes } from "react-router-dom";
 export function Kids() {
     return (
         <>
-            <h1>Kids Page</h1>
-            <h2>Discover This Month's Featured Animals!</h2>
-            <div className='container mt-3' style={{display: 'flex', gap: '20px', width: '100%'}}>
+        <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'></link>
+            <h1 className='kidsPage'>Kids Corner!</h1>
+            <h2 className='discover'>Discover This Month's Featured Animals!</h2>
+            <div className='container mt-3 cardContainer'>
                 <div className='card'>
                     <a href='#/Kids-Bat'>
-                    <img className='card-img-top' src={require('./images/bat.jpg')} alt='bat' />
+                    <img className='card-img-top animalImage' src={require('./images/bat.jpg')} alt='bat' />
                     </a>
                     <div className='card-body'>
                         <h4 className='card-title'>Bats</h4>
-                        <p className='card-text'><Link to="/Kids-Bat">Learn More</Link>&emsp;</p>
+                        <p className='card-text'><Link to="/Kids-Bat">Learn More</Link></p>
                     </div>
                 </div>
                 <div className='card'>
@@ -27,7 +29,7 @@ export function Kids() {
                     </a>
                     <div className='card-body'>
                         <h4 className='card-title'>Cheetahs</h4>
-                        <p className='card-text'><Link to="/Kids-Cheetah">Learn More</Link>&emsp;</p>
+                        <p className='card-text'><Link to="/Kids-Cheetah">Learn More</Link></p>
                     </div>
                 </div>
                 <div className='card'>
@@ -36,10 +38,11 @@ export function Kids() {
                     </a>
                     <div className='card-body'>
                         <h4 className='card-title'>Chameleons</h4>
-                        <p className='card-text'><Link to="/Kids-Chameleon">Learn More</Link>&emsp;</p>
+                        <p className='card-text'><Link to="/Kids-Chameleon">Learn More</Link></p>
                     </div>
                 </div>
-            </div>
+            </div><br/>
+
 
 
             <Routes>

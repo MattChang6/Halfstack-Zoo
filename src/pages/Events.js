@@ -32,7 +32,6 @@ export function Events() {
       editable: false,
       selectable: true,
       plugins: [dayGridPlugin],
-	  
     });
 
     calendar.render();
