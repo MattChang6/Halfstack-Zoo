@@ -2,7 +2,7 @@ import React from 'react';
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import '../components/Home.css';
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //slide show
 const images = [
@@ -23,6 +23,7 @@ const images = [
 export function Home() {
   return (
     <div>
+      <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'></link>
       <div style={{ position: 'relative' }}>
         <ImageGallery 
           items={images} 
@@ -36,8 +37,8 @@ export function Home() {
           slideInterval={5000}
         />
         <div>
-          <p className='planVisit'>Plan your visit</p>
           <h1 className='wildFun'>Wild fun awaits!</h1>
+          <a className='planVisit' href="#/Tickets">Plan Your Visit!</a>
         </div>
       </div> {/* NEED TO RESIZE IMAGES TO BE SAME LENGTH AND WIDTH */}
       <div style={{ textAlign: 'center', marginTop: '20px' }}>

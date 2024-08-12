@@ -2,6 +2,7 @@
     text-align: left;
     font-family: 'Barriecito';
     font-size: 60px;
+    padding-left: 1%;
 }
 
 .links {
@@ -32,4 +33,14 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.inline-container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.hangingBats {
+    padding-left: 1%;
+
 }

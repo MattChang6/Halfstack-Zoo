@@ -1,3 +1,5 @@
+import '../components/socials.css';
+
 export function Socials() {
     return (
         <>
@@ -9,10 +11,10 @@ export function Socials() {
 			<button type="button" className="btn btn-primary">Submit</button>
 		</form>
         <h2>Follow Us!</h2>
-            <a href="#/Socials" className="fa fa-facebook"></a>
-            <a href="#/Socials" className="fa fa-twitter"></a>
-            <a href="#/Socials" className="fa fa-youtube"></a>
-            <a href="#/Socials" className="fa fa-instagram"></a>
+            <a href="#/Socials" className="fa fa-facebook"> </a>
+            <a href="#/Socials" className="fa fa-twitter"> </a>
+            <a href="#/Socials" className="fa fa-youtube"> </a>
+            <a href="#/Socials" className="fa fa-instagram"> </a>
         </>
     )
 }

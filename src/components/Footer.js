@@ -1,7 +1,7 @@
 import React from "react";
 import "./FooterStyles.css";
 import { Link } from "react-router-dom";
-
+import "./socials.css";
 
 const Footer = () => {
     return (
@@ -12,10 +12,10 @@ const Footer = () => {
                     <div className="column">
                         <Link to="/"><img className="logoFooter" src={require("../pages/images/logo.png")}></img></Link>
                         <p className="heading">Socials</p>
-                        <a href="#/Socials" className="fa fa-facebook"></a>
-                        <a href="#/Socials" className="fa fa-twitter"></a>
-                        <a href="#/Socials" className="fa fa-youtube"></a>
-                        <a href="#/Socials" className="fa fa-instagram"></a>
+                        <a href="#/Socials" className="fa fa-facebook" > </a>
+                        <a href="#/Socials" className="fa fa-twitter" > </a>
+                        <a href="#/Socials" className="fa fa-youtube" > </a>
+                        <a href="#/Socials" className="fa fa-instagram"> </a>
                     </div>
                     <div className="column">
                         <p className="heading">Links</p>

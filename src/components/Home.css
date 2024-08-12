@@ -10,23 +10,30 @@
     max-height: 650px;
 }
 
+
 .planVisit {
     position: absolute;
-    top: 15%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 5px black;
-    color: white;
-    font-size: 80px;
+    text-shadow: 1px 1px 2px black;
+    color: #ffffff;
+    font-size: 30px;
+    background-color: #338000;
+    padding: 10px 30px;
+    border-radius: 25px;
+    
 }
 
 .wildFun {
     position: absolute; 
-    top: 30%;
+    top: 20%;
     left: 50%; 
     transform: translate(-50%, -50%); 
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 5px 5px 5px black;
     color: yellow;
+    font-size: 80px;
+    font-family: "Architects Daughter";
 }
 
 .links {
