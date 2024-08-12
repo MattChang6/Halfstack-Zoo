@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import { Home } from './pages/Home';
 import { Kids } from './pages/Kids';
@@ -16,25 +16,53 @@ import Footer from './components/Footer';
 import { Cart } from './pages/Cart';
 import './App.css';
 
+
 function App() {
+	const [showTicketsEvents, setShowTicketsEvents] = useState(false);
+	const [showDonationsGroup, setShowDonationsGroup] = useState(false);
 	return (
 		<>
+		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'></link>
 			<div style={{ display:'inline'}}>
-				<nav className="Nav">
-					<Link to="/"><img className="logoNav" src={require("./pages/images/logo.png")} alt="Logo"></img></Link>
-					<span className="header">
-						<Link to="/">Home</Link>&emsp;
-						<Link to="/Tickets">Tickets</Link>&emsp;
-						<Link to="/Events">Events</Link>&emsp;
-						<Link to="/Donations">Donations</Link>&emsp;
-						<Link to="/Membership">Membership</Link>&emsp;
-						<Link to="/Mission">Mission</Link>&emsp;
-						<Link to="/Kids">Kids</Link>&emsp;
-						<Link to="/Socials">Socials</Link>&emsp;
-						<Link to="/Shop">Shop</Link>&emsp;
-						<Link to="/Cart">Cart</Link>
-					</span>
-				</nav>
+			<nav className="Nav">
+            <Link to="/"><img className="logoNav" src={require("./pages/images/logo.png")} alt="Logo"></img></Link>
+            <span className="header">
+                <Link to="/">Home</Link>&emsp;
+
+                <div 
+                    className="dropdown"
+                    onMouseEnter={() => setShowTicketsEvents(true)}
+                    onMouseLeave={() => setShowTicketsEvents(false)}
+                >
+                    <span className="dropbtn">Tickets & Events</span>
+                    {showTicketsEvents && (
+                        <div className="dropdown-content">
+                            <Link to="/Tickets">Tickets</Link>
+                            <Link to="/Events">Events</Link>
+                        </div>
+                    )}
+                </div>&emsp;
+                <Link to="/Kids">Kids</Link>&emsp;
+				<Link to="/Mission">Mission</Link>&emsp;
+				<div 
+                    className="dropdown"
+                    onMouseEnter={() => setShowDonationsGroup(true)}
+                    onMouseLeave={() => setShowDonationsGroup(false)}
+                >
+                    <span className="dropbtn">Support Us</span>
+                    {showDonationsGroup && (
+                        <div className="dropdown-content">
+                            <Link to="/Donations">Donations</Link>
+                            <Link to="/Membership">Membership</Link>
+                            <Link to="/Shop">Shop</Link>
+                            <Link to="/Cart">Cart</Link>
+                        </div>
+                    )}
+                </div>&emsp;
+
+                <Link to="/Socials">Socials</Link>
+            </span>
+        </nav>
 			</div>
 
 			<Routes>
