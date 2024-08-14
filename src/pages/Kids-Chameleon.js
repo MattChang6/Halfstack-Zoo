@@ -35,34 +35,37 @@ export function Chameleon() {
         <>
             <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'></link>
             <link href='https://fonts.googleapis.com/css?family=Agbalumo' rel='stylesheet'></link>
-            <h1 className="kidsPageChameleon">Kids Page</h1>
-            <div style={{paddingLeft: '1%'}}>
-                <Link to="/Kids" className="links">Back</Link>&emsp;
-                <Link to="/Kids-Bat" className="links">Bats</Link>&emsp;
-                <Link to="/Kids-Cheetah" className="links">Cheetahs</Link>&emsp;
-            </div>
-            <Routes>
-                <Route path="/Kids" element={<Kids />}/>
-                <Route path="/Kids-Cheetah" element={<Cheetah />}/>
-                <Route path="/Kids-Bat" element={<Bat />}/>
-            </Routes>
-            <div>
+            <div className="chamBackground">
+                <h1 className="kidsPageChameleon">Kids Page</h1>
+                <div style={{paddingLeft: '1%'}}>
+                    <Link to="/Kids" className="links">Back</Link>&emsp;
+                    <Link to="/Kids-Bat" className="links">Bats</Link>&emsp;
+                    <Link to="/Kids-Cheetah" className="links">Cheetahs</Link>&emsp;
+                </div>
+                <Routes>
+                    <Route path="/Kids" element={<Kids />}/>
+                    <Route path="/Kids-Cheetah" element={<Cheetah />}/>
+                    <Route path="/Kids-Bat" element={<Bat />}/>
+                </Routes>
+                <div>
+                    <br />
+                    <h2 className="chameleonTitle">Chameleons</h2>
+                    <p className="score">Find the chameleon!</p>
+                    <p className="score">Score: {score}</p>
+                    <div id="game-box" className="game-box">
+                        <img 
+                            id="chameleon-image" 
+                            src={require("./images/cartoonCham.png") }
+                            alt="Chameleon" 
+                            className="chameleon-image"
+                            style={{ top: `${position.y}px`, left: `${position.x}px` }}
+                            onClick={handleImageClick}
+                        />
+                    </div><br />
+                </div>
+                <p className="paraCham">Source: https://kids.nationalgeographic.com/animals/reptiles/facts/chameleon</p>
                 <br />
-                <h2 className="chameleonTitle">Chameleons</h2>
-                <p className="score">Find the chameleon!</p>
-                <p className="score">Score: {score}</p>
-                <div id="game-box" className="game-box">
-                    <img 
-                        id="chameleon-image" 
-                        src={require("./images/cartoonCham.png") }
-                        alt="Chameleon" 
-                        className="chameleon-image"
-                        style={{ top: `${position.y}px`, left: `${position.x}px` }}
-                        onClick={handleImageClick}
-                    />
-                </div><br />
             </div>
-            <p>Source: https://kids.nationalgeographic.com/animals/reptiles/facts/chameleon</p>
         </>
     );
 }

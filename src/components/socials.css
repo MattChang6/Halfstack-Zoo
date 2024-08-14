@@ -1,3 +1,7 @@
+.socialBackground {
+  background-color: azure;
+}
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -31,3 +35,17 @@
     background: #125688;
     color: white;
   }
+
+.newsletter {
+  text-align: center;
+  font-size: 60px;
+}
+
+.email {
+  text-align: center;
+  font-size: 20px;
+}
+
+.logos {
+  text-align: center;
+}

@@ -28,6 +28,7 @@ export function Bat() {
         <>
             <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'></link>
             <link href='https://fonts.googleapis.com/css?family=Chicle' rel='stylesheet'></link>
+            <link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'></link>
             <div className="batBody">
                 <h1 className="kidsPageBat"> Kids Corner!</h1>
                 <div style={{paddingLeft: '1%'}}>
@@ -45,7 +46,7 @@ export function Bat() {
                     <h2 className="batsTitle">Bats</h2>
                     <div className="inline-container">
                         <img src={imageSrc} className="hangingBats" alt="Bats hanging" />
-                        <p className="paragraph">Bats are flying mammals that belong to the order of Chiroptera, Greek for "hand-wing."
+                        <p className="paraBat">Bats are flying mammals that belong to the order of Chiroptera, Greek for "hand-wing."
                             Although each bat species' diets vary, most eat a variety of insects (crickets, gnats, beetles, etc.).
                             Bats use echolocation, supersonic cries through their nose or mouth to detect objects by echoes
                             reflected back.</p>
@@ -64,7 +65,7 @@ export function Bat() {
                             {isDarkMode ? 'Daytime' : 'Nighttime'}
                         </button>
                     </div><br />
-                    <p className="paragraph">Source: https://www.si.edu/spotlight/bats/batfacts</p>
+                    <p className="paraBat">Source: https://www.si.edu/spotlight/bats/batfacts</p>
                 </div>
             </div>
         </>

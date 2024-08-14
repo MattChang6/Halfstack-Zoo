@@ -17,8 +17,10 @@
     font-family: 'Chicle';
 }
 
-.paragraph {
+.paraBat {
     padding-left: 1%;
+    font-family: 'Bakbak One';
+    font-size: 25px;
 }
 
 .buttonContainer {

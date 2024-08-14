@@ -49,7 +49,7 @@ export function Home() {
                 <img className='card-img-top' src={require('./images/kidsCorner.jpg')} alt='kidsCorner' />
               </a>
               <div className='card-body'>
-                  <h4 className='card-title'><Link to="/Kids">Kids Corner</Link></h4>
+                  <h4><Link to="/Kids" className='card-title'>Kids Corner</Link></h4>
               </div>
           </div>
           <div className='card'>
@@ -57,7 +57,7 @@ export function Home() {
                 <img className='card-img-top' src={require('./images/cheetahStuff.jpeg')} alt='teddyStuff' />
               </a>
               <div className='card-body'>
-                  <h4 className='card-title'><Link to="/Shop">Shop</Link></h4>
+                  <h4><Link to="/Shop" className='card-title'>Shop</Link></h4>
               </div>
           </div>
           <div className='card'>
@@ -65,7 +65,7 @@ export function Home() {
                 <img className='card-img-top' src={require('./images/pandaHi.jpg')} alt='panda' />
               </a>
               <div className='card-body'>
-                  <h4 className='card-title'><Link to="/Events">Panda Extravaganza</Link></h4>
+                  <h4><Link to="/Events" className='card-title'>Panda Extravaganza</Link></h4>
               </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export function Home() {
                 <img className='card-img-top' src={require('./images/parade.jpg')} alt='parade' />
               </a>
               <div className='card-body'>
-                  <h4 className='card-title'><Link to="/Events">Events</Link></h4>
+                  <h4><Link to="/Events" className='card-title'>Events</Link></h4>
               </div>
           </div>
           <div className='card'>
@@ -83,7 +83,7 @@ export function Home() {
                 <img className='card-img-top' src={require('./images/ticket.jpg')} alt='ticket' />
               </a>
               <div className='card-body'>
-                  <h4 className='card-title'><Link to="/Tickets">Tickets</Link></h4>
+                  <h4><Link to="/Tickets" className='card-title'>Tickets</Link></h4>
               </div>
           </div>
           <div className='card'>
@@ -91,7 +91,7 @@ export function Home() {
                 <img className='card-img-top' src={require('./images/forest.jpg')} alt='mission' />
               </a>
               <div className='card-body'>
-                  <h4 className='card-title'><Link to="/Mission">Our Mission</Link></h4>
+                  <h4><Link to="/Mission" className='card-title'>Our Mission</Link></h4>
               </div>
           </div>
         </div><br/>
